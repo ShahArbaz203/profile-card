@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    font-family: 'kumbh sans', sans-serif;
+    font-size: 18px;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    background: hsl(185, 75%, 39%);
+    /* background-image: url('/images/bg-pattern-top.svg'),
+    url('/images/bg-pattern-bottom.svg'); */
+    /* background-position: top -900px bottom -600px
+     left -300px  right -300px  ; */
+     /* background-origin: border-box; */
+     /* background-repeat: no-repeat; */
+     max-width: 1440px;
+     margin: 0 auto;
+     height: 600px;
+    margin-top: 30px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 400px;
+    height: 400px;
+    background: whitesmoke;
+    border-radius: 15px;
+
+}
+p {
+    margin-bottom: 0.5em;
+}
+ span,small{
+     color: hsl(227 , 10%, 46%);
+     font-weight: 300;
+ }
+ .card-top{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ .card-top img {
+     border-radius: 100px;
+     margin-top: 4.5em;
+     border: 2px solid black ;
+ }
+ .card-footer{
+     display: flex;
+     border-top: 1px solid  turquoise;
+     justify-content: space-evenly;
+     padding: 12px;
+     text-align: center;
+     line-height: 8px;
+ }
+ .card-footer , 
+ .card-top p{
+     font-weight: 700;
+     font-size: 18px;
+ }
+ .card-footer small{
+     margin-top: 0;
+     font-size: 16px;
+ }
+ @media (max-width: 512px){
+     margin-bottom: 0px;
+
+
+
+     .container{
+         background-position:
+         top -520px  right -760px,
+         bottom -550px left -770px ;
+         max-width: 500px;
+         width: 90%;
+         height: 360px;
+     }
+     .card{
+         display: flex;
+         flex-direction: column;
+         align-self: center;
+         width: 310px;
+         height: 385px;
+         background: whitesmoke;
+         border-radius: 15px;
+     }
+     .card-top img {
+         margin-bottom: 16px ;
+
+     }
+     .card-footer{
+         padding-bottom: 16px;
+     }
+     .card-footer, .card-top p {
+         font-size: 16px ;
+     }
+     .card-footer small{
+         font-size: 12px ;
+     }
+
+
+ }
+
+
